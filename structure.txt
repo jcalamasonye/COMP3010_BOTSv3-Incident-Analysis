@@ -1,0 +1,6 @@
+📁 Repo Structure
+- README.md
+- /splunk_queries
+- /screenshots
+- /report_drafts
+- /final_submission
