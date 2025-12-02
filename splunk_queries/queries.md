@@ -1,7 +1,7 @@
 # Splunk Queries used for 200-level BOTSv3 Investigation 
 
 ## This Document have all the Splunk queries used to answer the 200-level BOTSv3 questions (Q1-Q8).
-Each of the queries is labeled and well documented for clarity and to help construct the 2000 words assessment. 
+## Each of the queries is labeled and well documented for clarity and to help construct the 2000 words assessment. 
 
 # Q1 - IAM users that accessed the an AWS service 
 ## Answer - index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
