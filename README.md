@@ -1,10 +1,7 @@
-# COMP3010 - BOTSv3 Incident Analysis
+# Section 1: Introduction
+   Cybersecurity monitoring and incident response rely solely on the ability to detect, analyse, and interpret system and cloud activity. As new organisations increasingly adopt cloud services and distributed environments, analysts require tools capable of correlating large volumes of heterogeneous log data. Splunk plays an important role by providing a centralised platform for ingesting and analysing machine data to support threat hunting, breach analysis, and security decision making.
+   This report documents an investigation carried out using the Splunk BOTSv3 dataset, a purpose-built training dataset commonly used for analyst development and cyber range exercises. The dataset simulates a real-world compromise within a hybrid enterprise environment, including AWS activity logs, endpoint telemetry, authentication records, and adversarial behaviour. The objective of this investigation was to identify key indicators of compromise (IOCs), answer guided forensic questions and reconstruct attacker behaviour based on observable evidence.
+    In the progress of this investigation, Splunk queries was executed to help find suspicious links and patterns including unusual S3 object uploads, authentication anomalies, and endpoint activity. Every page of this analysis was documented, and evidence was recorded in form of query outputs and screenshots. With the combination of structured methodology with real incident response techniques, this report demonstrates how analysts can detect malicious activity and validate hypotheses using log data. Both research and findings helped improved my understanding of how cloud misconfigurations, credential misuse, and endpoint weaknesses can contribute to an attack sequence, and highlight the importance of continuous monitoring and proactive defence. 
 
-This repository is embedded with coursework files, queries, and functions related to Splunk analysis using the BOTSv3 dataset.
-
-## Timeline (Continuous Work Log)
-
-- Week 1 (Started: 17/11/2025): Repository Created, dataset explored
-- Week 2: Added initial Splunk queries and screenshots
-- Week 3: Analysis expansion (IAM activity, MFA logs, S3 misconfigurations)
-- Week 4: Final report, evidence and presentation preparation
+# Section 2: SOC Roles and Incident Handling Reflection
+  A Security Operating System (SOC) serves as the main function for monitoring, analysing, and responding to security threats in an organisation. The concept of SOC has evolved over the past fifteen years as a strategic defence mechanism against increasingly sophisticated cyberattacks and operate using a tiered model that defines specific responsibilities based on experience, technical depth, and investigative authority [1]. The BOTSv3 investigation goes in connection with how the SOC tiers function in practice. 
