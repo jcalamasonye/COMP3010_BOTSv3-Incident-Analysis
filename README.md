@@ -5,3 +5,13 @@
 
 # Section 2: SOC Roles and Incident Handling Reflection
   A Security Operating System (SOC) serves as the main function for monitoring, analysing, and responding to security threats in an organisation. The concept of SOC has evolved over the past fifteen years as a strategic defence mechanism against increasingly sophisticated cyberattacks and operate using a tiered model that defines specific responsibilities based on experience, technical depth, and investigative authority [1]. The BOTSv3 investigation goes in connection with how the SOC tiers function in practice. 
+  
+## Tier 1 – Monitoring and Initial triage 
+  Tier 1 plays a central role in identification and escalation of potential security incidents in a Security Operation Centre (SOC) such as monitoring SIEM dashboards, reviewing alerts, and performing initial triage [2]. In BOTSv3, a Tier 1 analyst would recognise unusual AWS behaviour such as PutBucketAcl events, failed authentication attempts, or incorrect S3 reads. They would take note of suspicious findings and enhance incidents if needed. 
+
+## Tier 2 – Investigation and Analysis 
+   Tier 2 is known to perform stronger and better investigation, connecting information through cloud servers, endpoints, and identity sources [3]. During this task, the Tier 2 function is associated with performing the SPL queries, isolating malicious behaviour, and identifying indicators of compromise (IOCs) such as public S3 bucket exposure, unauthorized fill uploads, Non-standard Windows OS versions, IAM users performing unusual actions. 
+
+## Tier 3 – Threat Hunting and Specialist Analysis 
+  Tier 3 analysts conduct advanced incident response, malware analysis, long-term threat hunting, and real-time identification of indicators of compromise (IOCs) such as shadow copy deletions, suspicious commands, and backup configuration modifications, enabling security teams to uncover adversarial behaviours before they disrupt recovery processes [4]. In BOTSv3, a Tier 3 analyst would reconstruct the entire attack chain. They would review persistence methods, analyse network links, and examine correlations that indicate advancement or authorised progress. 
+
