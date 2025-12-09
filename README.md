@@ -102,6 +102,12 @@ Fig 8. Security Relevant Windows event
   Going through figure 1 - 8, the screenshots document a standard technical workflow used to establish the Splunk investigation environment. this includes Creating and configuring an Ubuntu VirtualBox virtual machine, Installing Splunk Enterprise using the .db deployment method, ingesting the BOTSv3 dataset into Splunk, which helped create the bases for the investigative and threat hunting tasks and to also help better understand the process of splunk. 
 
 
+# Section 4: Guided Questions and Analysis
+ This section was carried out by answering all the 200-level BOTSv3 questions, the SPL query used, the results gotten, the screenshots taken, and its relevance with an SOC investigation. 
+
+## 4.1 Q1 – IAM Users Accessed AWS Services
+Query –  index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
+
 
 
 
