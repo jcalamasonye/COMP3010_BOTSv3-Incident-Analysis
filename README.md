@@ -35,7 +35,17 @@ Tier 2 analysis aim focuses on the understanding of the attack path not just ide
 
 
    <img width="452" height="281" alt="image" src="https://github.com/user-attachments/assets/a075eee3-11e1-47b4-92e2-69e789ffccaa" />
-                                                         Fig 2. Files in Ubuntu downloaded folder
+   Fig 2. Files in Ubuntu downloaded folder
+
+   Splunk was installed using the package manager in terminal:
+•	cd ~/Downloads
+•	sudo dpkg -i splunk-10.0.1-<version>-linux-amd64.deb
+After logging into Splunk Enterprise, the system wants user to accept the software license and create a login detail by running the following command 
+•	sudo /opt/splunk/bin/splunk start --accept-license.
+ After that, Splunk was configured to start automatically as a system service using 
+•	sudo /opt/splunk/bin/splunk enable boot-start
+ This ensure that it would start whenever the virtual machine comes up. Once the system starts running, the Splunk web interface became accessible through http://127.0.0.1:8000/,  which serves as a platform for log ingestion, indexing, and analytics throughout the project. Figure 3 and 4 shows the Splunk login screen displayed in the browser, showing that the installation was successful and the Splunk Enterprise is operational. 
+
 
 
 
