@@ -81,6 +81,30 @@ Fig 6. Host in the Environment
 
 These revealed 30 distinct hosts, representing a realistic environment all in the figure above. 
 
+## 3.5. Identifying Available Sourcetypes 
+  To register the differences, the sourcetype metadata in the figure 7 was used. 
+
+  <img width="452" height="292" alt="image" src="https://github.com/user-attachments/assets/1c321cf3-1c53-444d-9f41-e41557be5bc5" />
+  Fig 7. Sourcetypes available 
+
+  This shows that the dataset has over 107 sourcetypes, which are in figure 7 above. 
+
+  
+## 3.6. Validating Security-Relevant Event Sources
+   Source types such as Windows security logs were used and this show logs containing event codes, event types which are required for attacking attacker’s responses. 
+
+
+<img width="452" height="289" alt="image" src="https://github.com/user-attachments/assets/3e2880a7-a0e2-47f5-98c1-ed025b9c07b2" />
+Fig 8. Security Relevant Windows event
+
+
+## 3.7. Summary of Installation and Preparation 
+  Going through figure 1 - 8, the screenshots document a standard technical workflow used to establish the Splunk investigation environment. this includes Creating and configuring an Ubuntu VirtualBox virtual machine, Installing Splunk Enterprise using the .db deployment method, ingesting the BOTSv3 dataset into Splunk, which helped create the bases for the investigative and threat hunting tasks and to also help better understand the process of splunk. 
+
+
+
+
+
 
 
 
