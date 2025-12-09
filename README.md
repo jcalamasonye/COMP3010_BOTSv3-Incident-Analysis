@@ -37,6 +37,8 @@ Tier 2 analysis aim focuses on the understanding of the attack path not just ide
    <img width="452" height="281" alt="image" src="https://github.com/user-attachments/assets/a075eee3-11e1-47b4-92e2-69e789ffccaa" />
    Fig 2. Files in Ubuntu downloaded folder
 
+
+
    Splunk was installed using the package manager in terminal:
 •	cd ~/Downloads
 •	sudo dpkg -i splunk-10.0.1-<version>-linux-amd64.deb
@@ -45,6 +47,45 @@ After logging into Splunk Enterprise, the system wants user to accept the softwa
  After that, Splunk was configured to start automatically as a system service using 
 •	sudo /opt/splunk/bin/splunk enable boot-start
  This ensure that it would start whenever the virtual machine comes up. Once the system starts running, the Splunk web interface became accessible through http://127.0.0.1:8000/,  which serves as a platform for log ingestion, indexing, and analytics throughout the project. Figure 3 and 4 shows the Splunk login screen displayed in the browser, showing that the installation was successful and the Splunk Enterprise is operational. 
+
+
+ <img width="452" height="284" alt="image" src="https://github.com/user-attachments/assets/243d91d3-9643-4417-b4db-79b094e35a0c" />
+Fig 3. Splunk Enterprise Login Screen
+
+
+<img width="452" height="283" alt="image" src="https://github.com/user-attachments/assets/dd754820-d4e1-4471-834e-9ee022622793" />
+Fig 4. Splunk Dashboard Confirming Successful Installation 
+
+
+## 3.3.  BOTSv3 Dataset Ingestion 
+   The BREACH and Outage Testing Scenario v3 (BOTSv3) dataset was gotten from Splunk's official GitHub repository. The compressed archive file (botsv3_data_set.tgz) was saved in Ubuntu Downloads directory as shown in the figures above. 
+  To ingest this dataset, I used the Splunk approved deployment method which involves extracting the dataset directly into Splunk application directory with the following commands:
+•	sudo tar zxvf botsv3_data_set.tgz -C /opt/splunk/etc/apps/
+  This command automatically loads all pre-indexed event data into the botsv3 index. After extraction, I had to restart Splunk to make sure the dataset was fully activated. Ran a validation search to confirm the successful ingestion below. 
+
+
+<img width="452" height="286" alt="image" src="https://github.com/user-attachments/assets/38762cb5-2ca1-4411-8ed5-bb5416cd0333" />
+Fig 5. Event time
+
+
+  With the above figure, that show a continuous pattern across 2018-2019, tells that more than 1 million events were indexed to confirm the successful data ingestion.
+  
+## 3.4.  Identification of Host in the Dataset
+   Ran the following query in the figure below to determine the structure of the simulated enterprise network. 
+
+
+
+<img width="452" height="287" alt="image" src="https://github.com/user-attachments/assets/fe0672c3-04e5-4959-8b80-43536eee1fad" />
+Fig 6. Host in the Environment 
+
+
+These revealed 30 distinct hosts, representing a realistic environment all in the figure above. 
+
+
+
+
+                                               
+
 
 
 
