@@ -106,7 +106,7 @@ Fig 8. Security Relevant Windows event
  This section was carried out by answering all the 200-level BOTSv3 questions, the SPL query used, the results gotten, the screenshots taken, and its relevance with an SOC investigation. 
 
 ## 4.1 Q1 – IAM Users Accessed AWS Services
-Query –  index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
+QUERY –  index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
 
 
 
