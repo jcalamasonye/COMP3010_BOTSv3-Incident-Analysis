@@ -1,4 +1,5 @@
-📁 Repo Structure
+REPO STRUCTURE
+
 - README.md
 - /splunk_queries
 - /screenshots
