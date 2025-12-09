@@ -28,5 +28,14 @@ Tier 2 analysis aim focuses on the understanding of the attack path not just ide
 
   
   <img width="452" height="294" alt="image" src="https://github.com/user-attachments/assets/45eb1238-a4c7-40a6-a6f2-344ece3d16a2" />
-                  Fig 1. Oracle VirtualBox Environment 
+   Fig 1. Oracle VirtualBox Environment 
+
+   ## 3.2. Splunk Enterprise Installation on Ubuntu 
+   After I installed and configured Ubuntu, I proceeded on downloading Splunk from the Splunk Enterprise from the official website on Ubuntu into the download’s directory. Below, figure 2 shows the downloaded .deb installer together with the BOTSv3 dataset. 
+
+
+   <img width="452" height="281" alt="image" src="https://github.com/user-attachments/assets/a075eee3-11e1-47b4-92e2-69e789ffccaa" />
+                                                         Fig 2. Files in Ubuntu downloaded folder
+
+
 
