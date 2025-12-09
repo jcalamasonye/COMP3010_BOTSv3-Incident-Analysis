@@ -28,5 +28,5 @@ Tier 2 analysis aim focuses on the understanding of the attack path not just ide
 
   
   <img width="452" height="294" alt="image" src="https://github.com/user-attachments/assets/45eb1238-a4c7-40a6-a6f2-344ece3d16a2" />
-                                                Fig 1. Oracle VirtualBox Environment 
+                  Fig 1. Oracle VirtualBox Environment 
 
