@@ -105,8 +105,78 @@ Fig 8. Security Relevant Windows event
 # Section 4: Guided Questions and Analysis
  This section was carried out by answering all the 200-level BOTSv3 questions, the SPL query used, the results gotten, the screenshots taken, and its relevance with an SOC investigation. 
 
-## 4.1 Q1 – IAM Users Accessed AWS Services
+## 4.1. Q1 – IAM Users Accessed AWS Services
 QUERY –  index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
+
+
+<img width="452" height="285" alt="image" src="https://github.com/user-attachments/assets/847a6e09-68b0-4561-bd97-5dd6e0232bf6" />
+Fig 9. IAM User Accessed Service 
+
+
+SOC Relevance – Getting an inadept on what identities accessed AWS services helps analysts profile behaviour, detect unauthorised access, and review privilege boundaries [6] . Multiple active IAM identities indicate a wide distribution of access, which increases the attack surface.
+
+## 4.2. Q2 – Field Used to Detect MFA Absence
+QUERY – index=botsv3 sourcetype=”aws:cloudtrail” |  stats count by eventName 
+
+<img width="452" height="282" alt="image" src="https://github.com/user-attachments/assets/f9e3ac0c-efd1-4252-bf1e-8156ef7d7ddf" />
+Fig 10. Field to Detect MFA
+
+SOC Relevance – Every incident that was evaluated turned out to be false, indicating that AWS API actions were carried out without MFA and creating a serious cloud security issue [7]. 
+
+## 4.3. Q3 – Processor Number Used on Web Server 
+QUERY – index=botsv3 sourcetype=hardware | CPU_TYPE
+
+<img width="452" height="278" alt="image" src="https://github.com/user-attachments/assets/4b90e05d-ce64-4028-8d1a-339f787f9637" />
+Fig 11. Processor number 
+
+SOC Relevance – Processor identification helps identify unauthorised devices, verify hardware data, and evaluate specifications for analytical responses [8].
+
+## 4.4. Q4 – Event ID For Public S3 Bucket ACL Change 
+QUERY – index=botsv3 sourcetype="aws:cloudtrail" eventName=PutBucketAcl | table eventID eventName requestParameters.bucketName 
+
+<img width="452" height="279" alt="image" src="https://github.com/user-attachments/assets/24c30818-6fcd-4600-a069-00331685ae9b" />
+Fig 12. Event ID 
+
+SOC Relevance – The main reason for the S3 bucket's public exposure is this analysis. This study allowed SOC analysts to identify who approved the expose.
+
+## 4.5. Q5 – Bud’s Username
+QUERY – index=botsv3 sourcetype=”aws:cloudtrail” | stats values(userIdentity.userName)
+
+<img width="452" height="283" alt="image" src="https://github.com/user-attachments/assets/1377dd37-eba5-47cd-b94e-215515a96605" />
+Fig 13. Bud’s Username 
+
+SOC Relevance – One of the main responsibilities of SOC is to determine who oversees unsafe configuration changes.
+
+## 4.6. Q6 – Name of the S3 Bucket Made Public 
+QUERY – index=botsv3 sourcetype=”aws:cloudtrail” eventName=PutBucketAcl | table requestParameters.bucketName userIdentity.userName
+
+<img width="452" height="285" alt="image" src="https://github.com/user-attachments/assets/56906aee-06ff-403d-b073-8397ac801f38" />
+Fig 14. Name of S3 Bucket
+
+SOC Relevance – This shows which asset is affected by the misconfiguration. Analysts may assess exposure by knowing the bucket.
+
+## 4.7. Q7 – Text File uploaded to the Public S3 Bucket
+QUERY - index=botsv3 sourcetype="aws:s3:accesslogs" "*frothlywebcode*" "*.txt"
+
+<img width="452" height="288" alt="image" src="https://github.com/user-attachments/assets/2a12c215-bb06-4b46-869c-79e790060020" />
+Fig 15. Bucket File Name
+
+SOC Relevance – The file name suggests to ethical disclosure, simulating a situation in which researchers alert businesses by placing harmless information in public storage.
+
+## 4.8. Q8 – FQDN of Endpoint Running a Different Windows OS Edition
+QUERY –  index=botsv3 sourcetype=winhostmon Type=OperatingSystem | stats values(OS) values(fqdn) by host
+
+<img width="452" height="291" alt="image" src="https://github.com/user-attachments/assets/8f1f5f28-d3ca-4983-8059-e4fdf187f722" />
+Fig 16. FQDN Endpoint
+
+Answer – During my investigation, I figured out that only one endpoint used the windows 10 Enterprise which is BTOLL-L, further host investigation into BSTOLL-L revealed its full entity domain as BSTOLL-L.froth.ly. 
+
+SOC Relevance – A unique OS version may highlight sensitive systems, testing or development settings, indications of tampering or rebuild, prompting SOC analyst to flag off these systems for more investigation. 
+
+
+
+
+
 
 
 
