@@ -25,6 +25,8 @@ Tier 2 analysis aim focuses on the understanding of the attack path not just ide
 
   ## 3.1. Virtual Machine Setup 
   The investigation and practice were done on Oracle VirtualBox, selected due to its stability, compatibility and how suitable it is for isolated cybersecurity testing. According to the VirtualBox configuration screenshot displayed in Fig. 1, the hardware environment comprised of a Windows 11 host operating system running an Ubuntu 20.04 LTS virtual machine in VirtualBox with 8 GB of allotted memory, 60 GB of storage, and a secure, isolated NAT network mode.
-  <img width="452" height="294" alt="image" src="https://github.com/user-attachments/assets/45eb1238-a4c7-40a6-a6f2-344ece3d16a2" />
 
+  
+  <img width="452" height="294" alt="image" src="https://github.com/user-attachments/assets/45eb1238-a4c7-40a6-a6f2-344ece3d16a2" />
+                                                Fig 1. Oracle VirtualBox Environment 
 
