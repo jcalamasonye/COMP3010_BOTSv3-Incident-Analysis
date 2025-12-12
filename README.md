@@ -174,6 +174,24 @@ Answer – During my investigation, I figured out that only one endpoint used th
 SOC Relevance – A unique OS version may highlight sensitive systems, testing or development settings, indications of tampering or rebuild, prompting SOC analyst to flag off these systems for more investigation. 
 
 
+# Section 5: Conclusion and Recommendations 
+
+ At the end of this report, the investigation shows how we can use Splunk to construct a good incident analysis across cloud, endpoint, and user activity logs within the enterprise environment [9] . Few problems were identified while using the BOTSv3 dataset, problems such as misconfigured S3 permissions and repeated activity linked to the IAM user bstoll, whose actions resulted in bad ACL changes, file access attempts and related endpoint behaviour. The findings of the publicly accessible frothlywebcode bucket and the uploaded " OPEN_BUCKET_PLEASE_FIX.txt" file shows how simple configuration errors can create opportunities for exploitation. 
+
+ 
+ ## Recommendations 
+  To improve the organisation's security standards, high quality measures should be improvised which are. IAM controls should be modified by enforcing least privilege access [10] , restricting high risk actions such as S3 ACL modifications and mandating MFA for all users. 
+  S3 configuration must be thorough using block public access, continuous monitoring rules, and automated policy enforcement to prevent exploitation [11].
+  Monitoring and detection functions should be improved by allowing real alerts on CloudTrail and S3 activity, especially in an unauthorised access attempt [12]
+    Endpoint management needs to be of standards to that all workstations follow consistent operating system versions [13] , making deviations identifiable.
+    Finally, staff should receive certain training on secure cloud practices, importance of MFA, and the risk associated with improper configuration changes [14]. 
+
+    
+## Final Reflection 
+  BOTSv3 effectively replicated the challenges faced on modern social analysts, requiring analysts to integrate multiple data sources, critical thinking, and root cause analysis [15] . This investigation emphasised on the benefits of proactive monitoring, consistent operational standards, and connections between technical and organisational analysts to maintain good security practice [16]. 
+
+
+
 
 
 
