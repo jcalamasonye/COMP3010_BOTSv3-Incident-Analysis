@@ -192,6 +192,51 @@ SOC Relevance – A unique OS version may highlight sensitive systems, testing o
 
 
 
+# References
+
+[1] 	Y. Baddi, M. A. Almaiah, O. Almomani and Y. Maleh, The Art of Cyber Defense: From Risk Assessment to Threat Intelligence, CRC press, 2024, p. pp271.
+
+[2] 	L. Kersten, S. Darré, T. Mulders, E. Zambon, M. Caselli and C. Snijders, “A Security Alert Investigation Tool Supporting Tier 1 Analysts in Contextualizing and Understanding Network Security Events,” 2024 Annual Computer Security Applications Conference (ACSAC), pp. pp. 890-905, 09-13 December 2024.
+
+[3] 	A. L. Bruhn, K. L. Lane and S. E. Hirsch, “A Review of Tier 2 Interventions Conducted Within Multitiered Models of Behavioral Prevention,” vol. 22, no. 3, 4 March 2013.
+
+[4] 	N. Alsharabi, A. Bhardwaj, A. Ayaba and A. Jadi, “Threat hunting for adversary impact inhibiting system recovery,” Computers & Security, vol. 154, p. pp. 104532, September 2025. 
+
+[5] 	E. Al-Dahasi and F. A. Khan, “Automating Security Incident Response in SCADA Systems through SIEM-ML Integration,” 2024 29th International Conference on Automation and Computing (ICAC), pp. pp. 1-10, August 2024. 
+
+[6] 	D. N. Srisai and D. K. Rattanapong, “Securing AWS Resources with IAM: Identity-Based Policies, Actions, and Permissions Flow,” Vols. 9, no.4, no. pp. 14-22, 2022. 
+
+[7] 	E. Caffagni, D. W. Eaton, J. P. Jones and M. v. d. Baan, “Detection and analysis of microseismic events using a Matched Filtering Algorithm (MFA),” Geophysical Journal International, vol. 206, no. 1, pp. pp. 644-658, 03 April 2016. 
+
+[8] 	X. Su, C.-C. Chu, B. S. Prabhu and R. Gadh, “On the Identification Device Management and Data Capture via WinRFID1 Edge-Server,” vol. 1, no. 2, pp. pp. 95-104, 31 December 2007. 
+
+[9] 	P. Shelke and T. Frantti, “Exploring the Possibilities of Splunk Enterprise Security in Advanced Cyber Threat Detection,” Proceedings of the 20th International Conference on Cyber Warfare and Security (ICCWS 2025) , vol. 20, no. 1, pp. pp. 605-613, 2025. 
+
+[10] 	S. Vitla, “Securing the physical and digital frontier: leveraging identity and access management (IAM) to address the lack of controls on physical access to sensitive systems,” Cyber Risk Security and Governance, Cotelligent India Pvt Ltd (A TechDemocracy Company), Hyderabad, Telangana, vol. 06, no. 02, pp. pp. 108-125, 07 July 2022. 
+
+[11] 	F. Siddiqui, M. Hagan and S. Sezer, “Embedded Policing and Policy Enforcement Approach for Future Secure IoT Technologies,” Living in the Internet of Things: Cybersecurity of the IoT, 2018. 
+
+[12] 	D. Tykholaz, R. Banakh, L. Mychuda, A. Piskozub and Kyrychok, “Incident response with AWS detective controls,” Cybersecurity Providing in Information and Telecommunication Systems, vol. 3826, pp. PP. 190-197, 06 Decemeber 2024. 
+
+[13] 	S. Mistry, P. Lalwani and M. B. Potdar, “Endpoint Protection through Windows Operating System Hardening,” International Journal of Computer Applications Technology and Research, vol. 7, no. 02, 2018. 
+
+[14] 	S. H. Kendyala, “THE ROLE OF MULTI FACTOR AUTHENTICATION IN SECURING CLOUD BASED ENTERPRISE APPLICATIONS,” p. pp. 16, 11 November 2020. 
+
+[15] 	A. T. Chen, M. Komi, S. Bessler, S. P. Mikles and Y. Zhang, “Integrating statistical and visual analytic methods for bot identification of health-related survey data,” Journal of Biomedical Informatics, vol. 104439, p. pp.144, August 2023. 
+
+[16] 	C. Onwubiko, “Cyber security operations centre: Security monitoring for protecting business and supporting cyber defense strategy,” 2015 International Conference on Cyber Situational Awareness, Data Analytics and Assessment (CyberSA), pp. pp. 1-10, 27 July 2015. 
+
+[17] 	F. Siddiqui, M. Hagan and S. Sezer, “Embedded Policing and Policy Enforcement Approach for Future Secure IoT Technologies,” Living in the Internet of Things: Cybersecurity of the IoT, 2018. 
+
+[18] 	D. Tykholaz, R. Banakh, L. Mychuda, A. Piskozub and Kyrychok, “ncident response with AWS detective controls Cybersecurity Providing in Information and Telecommunication Systems,” vol. 3826, pp. pp. 190-197, December 06 2024. 
+
+[19] 	S. Mistry, P. Lalwani and M. B. Potdar, “Endpoint Protection through Windows Operating System Hardening,” International Journal of Computer Applications Technology and Research, vol. 7, no. 2, pp. pp. 58-62, 2018. 
+
+
+
+
+
+
 
 
 
