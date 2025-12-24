@@ -4,26 +4,26 @@
 ## Each of the queries is labeled and well documented for clarity and to help construct the 2000 words assessment. 
 
 # Q1 - IAM users that accessed the an AWS service 
-## Answer - index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
+## Query - index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
 
 # Q2 - Using CloudTrail to Detect AWS API Activity Without MFA
-## Answer - index=botsv3 sourcetype="aws:cloudtrail" | stats count by eventName
+## Query - index=botsv3 sourcetype="aws:cloudtrail" | stats count by eventName
 
 # Q3 - Processor number used on the web servers
-## Answer - index=botsv3 sourcetype=hardware | table CPU_TYPE
+## Query - index=botsv3 sourcetype=hardware | table CPU_TYPE
 
 # Q4 - Event ID of the API call that made the S3 bucket public 
-## Answer - index=botsv3 sourcetype="aws:cloudtrail" eventName=PutBucketAcl | table eventID eventName requestParameters.bucketName
+## Query - index=botsv3 sourcetype="aws:cloudtrail" eventName=PutBucketAcl | table eventID eventName requestParameters.bucketName
 
 # Q5 - bud's Username
-## Answer - index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
+## Query - index=botsv3 sourcetype="aws:cloudtrail" | stats values(userIdentity.userName)
 
 # Q6 - Name of the S3 bucket that was made public
-## Answer - index=botsv3 sourcetype="aws:cloudtrail" eventName=PutBucketAcl | table requestParameters.bucketName userIdentity.userName
+## Query - index=botsv3 sourcetype="aws:cloudtrail" eventName=PutBucketAcl | table requestParameters.bucketName userIdentity.userName
 
 # Q7 - Text file uploaded to the public S3 bucket
-## Answer - index=botsv3 sourcetype="aws:s3:accesslogs" "*frothlywebcode*" "*.txt"
+## Query - index=botsv3 sourcetype="aws:s3:accesslogs" "*frothlywebcode*" "*.txt"
 
 # Q8 - FQDN of endpoint running a different Windows OS edition
-## Answer - index=botsv3 sourcetype=winhostmon Type=OperatingSystem | stats values(OS) values(fqdn) by host
+## Query - index=botsv3 sourcetype=winhostmon Type=OperatingSystem | stats values(OS) values(fqdn) by host
 ## (Then isolate the host showing **Microsft Windows 10 Enterprise** which is **BSTOLL-L** 
