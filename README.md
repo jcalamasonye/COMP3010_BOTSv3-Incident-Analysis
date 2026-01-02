@@ -241,57 +241,59 @@ SOC Relevance – A unique OS version may highlight sensitive systems, testing o
 
 
 
+
+
 # Student Declaration of AI Tool use in this Assessment
 Please indicate your level of usage of generative AI for this assessment - please tick the appropriate category(s). 
 If the “Assisted Work” or “Partnered Work” category is selected, please expand on the usage and in which elements of the assignment the usage refers to.
 
-Solo Work	S1 - Generative AI tools have not been used for this assessment.	☐
+## Solo Work	S1 - Generative AI tools have not been used for this assessment.	☐
 
-Assisted Work	A1 – Idea Generation and Problem Exploration
+## Assisted Work	A1 – Idea Generation and Problem Exploration
 Used to generate project ideas, explore different approaches to solving a problem, or suggest features for software or systems. Students must critically assess AI-generated suggestions and ensure their own intellectual contributions are central.	☐
 
-A2 - Planning & Structuring Projects
+### A2 - Planning & Structuring Projects
 AI may help outline the structure of reports, documentation and projects. The final structure and implementation must be the student’s own work.	☐
 
-A3 – Code Architecture
+### A3 – Code Architecture
 AI tools maybe used to help outline code architecture (e.g. suggesting class hierarchies or module breakdowns). The final code structure must be the student’s own work.	☐
 
-A4 – Research Assistance
+### A4 – Research Assistance
 Used to locate and summarise relevant articles, academic papers, technical documentation, or online resources (e.g. Stack Overflow, GitHub discussions. The interpretation and integration of research into the assignment remain the student’s responsibility.	☐
 
-A5 - Language Refinement
+### A5 - Language Refinement
 Used to check grammar, refine language, improve sentence structure in documentation not code. AI should be used only to provide suggestions for improvement. Students must ensure that the documentation accurately reflects the code and is technically correct.	☐
 
-A6 – Code Review
+### A6 – Code Review
 AI tools can be used to check comments within the code and to suggest improvements to code readability, structure or syntax.  AI should be used only to provide suggestions for improvement. Students must ensure that the code accurately reflects their knowledge and is technically correct.	☐
 
-A7 - Code Generation for Learning Purposes
+### A7 - Code Generation for Learning Purposes
 Used to generate example code snippets to understand syntax, explore alternative implementations, or learn new programming paradigms. Students must not submit AI-generated code as their own and must be able to explain how it works.	☐
 
-A8 - Technical Guidance & Debugging Support
+### A8 - Technical Guidance & Debugging Support
 AI tools can be used to explain algorithms, programming concepts, or debugging strategies. Students may also help interpret error messages or suggest possible fixes. However, students must write, test, and debug their own code independently and understand all solutions submitted.	☐
 
-A9 - Testing and Validation Support
+### A9 - Testing and Validation Support
 AI may assist in generating test cases, validating outputs, or suggesting edge cases for software testing. Students are responsible for designing comprehensive test plans and interpreting test results.	☐
 
-A10 - Data Analysis and Visualization Guidance
+### A10 - Data Analysis and Visualization Guidance
 AI tools can help suggest ways to analyse datasets or visualize results (e.g. recommending chart types or statistical methods). Students must perform the analysis themselves and understand the implications of the results.	☐
 
-A11 - Other uses not listed above
+### A11 - Other uses not listed above
 Please specify:	☐
 
-Partnered Work	P1 - Generative AI tool usage has been used integrally for this assessment
+## Partnered Work	P1 - Generative AI tool usage has been used integrally for this assessment
 Students can adopt approaches that are compliant with instructions in the assessment brief.
 Please Specify: Partnered use of AI such as ChatGPT (OpenAI) to help with researching, report structuring, installation and preparation and troubleshooting splunk queries which are in alignment with the course work brief 	☒
 
 
-Please provide details of AI usage and which elements of the coursework this relates to:
+## Please provide details of AI usage and which elements of the coursework this relates to:
 
-In this coursework, I used ChatGPT in the partnered role to fully understand the background concepts such as SOC tiers, Splunk and incident handling, to also help plan a better structure of my BOTSv3 incident report and GITHUB README, to better improve my wording and grammar usage, and to get better ideas for troubleshooting Splunk queries. The final searches, analysis, quiz answers, video content and conclusion are all my work 
+   In this coursework, I used ChatGPT in the partnered role to fully understand the background concepts such as SOC tiers, Splunk and incident handling, to also help plan a better structure of my BOTSv3 incident report and GITHUB README, to better improve my wording and grammar usage, and to get better ideas for troubleshooting Splunk queries. The final searches, analysis, quiz answers, video content and conclusion are all my work 
 
-I understand that the ownership and responsibility for the academic integrity of this submitted assessment falls with me, the student.	☒
+### I understand that the ownership and responsibility for the academic integrity of this submitted assessment falls with me, the student.	☒
 
-I confirm that all details provide above are an accurate description of how AI was used for this assessment.	☒
+### I confirm that all details provide above are an accurate description of how AI was used for this assessment.	☒
 
 
 
