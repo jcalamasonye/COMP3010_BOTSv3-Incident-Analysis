@@ -2,7 +2,7 @@
    Cybersecurity monitoring and incident response rely solely on the ability to detect, analyse, and interpret system and cloud activity. As new organisations increasingly adopt cloud services and distributed environments, analysts require tools capable of correlating large volumes of heterogeneous log data. Splunk plays an important role by providing a centralised platform for ingesting and analysing machine data to support threat hunting, breach analysis, and security decision making.
    This report documents an investigation carried out using the Splunk BOTSv3 dataset, a purpose-built training dataset commonly used for analyst development and cyber range exercises. The dataset simulates a real-world compromise within a hybrid enterprise environment, including AWS activity logs, endpoint telemetry, authentication records, and adversarial behaviour. 
 
-# A Public GitHub Repository containing evidence, queries, and video link: 
+# A Public GitHub Repository containing evidence, queries, and video link: https://github.com/jcalamasonye/COMP3010_BOTSv3-Incident-Analysis.git
 
 # Section 2: SOC Roles and Incident Handling Reflection
    A Security Operating System (SOC) serves as the main function for monitoring, analysing, and responding to security threats in an organisation. The concept of SOC has evolved over the past fifteen years as a strategic defence mechanism against increasingly sophisticated cyberattacks and operate using a tiered model that defines specific responsibilities based on experience, technical depth, and investigative authority [1]. The BOTSv3 investigation goes in connection with how the SOC tiers function in practice. 
