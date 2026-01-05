@@ -2,7 +2,7 @@
    Cybersecurity monitoring and incident response rely solely on the ability to detect, analyse, and interpret system and cloud activity. As new organisations increasingly adopt cloud services and distributed environments, analysts require tools capable of correlating large volumes of heterogeneous log data. Splunk plays an important role by providing a centralised platform for ingesting and analysing machine data to support threat hunting, breach analysis, and security decision making.
    This report documents an investigation carried out using the Splunk BOTSv3 dataset, a purpose-built training dataset commonly used for analyst development and cyber range exercises. The dataset simulates a real-world compromise within a hybrid enterprise environment, including AWS activity logs, endpoint telemetry, authentication records, and adversarial behaviour. 
 
-# A Public GitHub Repository containing evidence, queries, and video link: 
+# A Public GitHub Repository containing evidence, queries, and a video link: 
  https://github.com/jcalamasonye/COMP3010_BOTSv3-Incident-Analysis.git
 
 # Section 2: SOC Roles and Incident Handling Reflection
